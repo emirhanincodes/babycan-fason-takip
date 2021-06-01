@@ -1,0 +1,10 @@
+.babycan{
+    margin-top: 30px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+.form-floating{
+    display:flex;
+    width:400px;
+    height: 50px;
+}

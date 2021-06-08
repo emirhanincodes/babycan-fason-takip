@@ -15,7 +15,14 @@ class TableUI{
         const table = document.getElementById('product-table');
 
         var html = `
-        
+        <tr>
+            <td><img src="img/${product.name}"/></td>
+            <td>${product.kod}</td>
+            <td>${product.receiver}</td>
+            <td>${product.alinanadet}</td>
+            <td>${product.verilenadet}</td>
+            <td><a href="#" data-id="${product.fasonId}" class="btn btn-danger btn-sm delete">Delete</a></td>
+         </tr>    
         
         `
         list.innerHTML += html;
@@ -36,7 +43,9 @@ deleteProduct(element){
 }
 showAlert(message,className){
     var alert =`
-    
+    <div class="alert alert-${className}">
+            ${message}
+        </div> 
     `;
     const row = document.querySelector('.row');
     row.insertAdjacentHTML('beforeBegin',alert);

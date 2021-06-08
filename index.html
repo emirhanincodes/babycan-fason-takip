@@ -41,7 +41,26 @@
         </div>
         <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Ekle</button>
         <button class="btn btn-success"><i class="fas fa-file-excel"></i> Excel Olarak Kaydet</button>
-        <button class="btn btn-danger"><i class="fas fa-search"></i> Ürünleri Gör</button>
+        <button class="btn btn-danger" >
+            <a href="products.html"></a><i class="fas fa-search"></i> Ürünleri Gör</button> 
+    </div>
+    <div class="col-md-7 mt-4">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Ürün Adı</th>
+                    <th>Pastal Kodu</th>
+                    <th>Kime Gitti</th>
+                    <th>Alınan Adet</th>
+                    <th>Verilen Adet</th>
+                    <th>Not </th>
+                    <th>Tarih </th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+
+            </tbody>
+        </table>
     </div>
     <script src="https://kit.fontawesome.com/14bb264684.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>

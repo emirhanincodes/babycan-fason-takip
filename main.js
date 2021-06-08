@@ -25,7 +25,8 @@ class TableUI{
          </tr>    
         
         `
-        list.innerHTML += html;
+        table.innerHTML += html;
+        console.log(product);
     }
 
 clearControls(){
